@@ -1,0 +1,200 @@
+
+/*------ Fonts ------------------------------------------*/
+
+html {
+	font-size: 120%;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Lobster', cursive;
+	color: #DE7047;
+}
+
+nav.main-nav, .sub-heading {
+	font-family: 'Oswald', sans-serif;
+	color: #FFDE8D;
+}
+
+div, p, span, ul, ol {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+a {
+	color: #FFDE8D;
+	text-decoration: none;
+}
+
+a:hover, div.link-card a:hover {
+	color: #DE7047;
+}
+
+div.link-card a {
+	font-size: 1.3em;
+	color: #FFF;
+}
+
+ul {
+	list-style-type: none;
+}
+
+header div.logo a {
+	color: #DE7047;
+	text-shadow: 0px 0px 18px rgba(255, 255, 255, 0.5);
+}
+
+footer {
+	font-size: 0.8em;
+	color: #FFF;
+}
+
+div#entrence h1, div#entrence p {
+	color: #FFF;
+	text-shadow: 1px 1px 12px #999999;
+}
+
+div.card ul {
+	font-size: 0.95em;
+	line-height: 1.4em;
+}
+
+div.sub-video-title {
+	font-size: 0.9em;
+}
+
+
+/*------ Layout -----------------------------------------*/
+
+body {
+	background-image: url("../img/fruits.jpg");
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-size: auto 100vh;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	padding-top: 1rem;
+	z-index: 10;
+	text-align: center;
+	background-color: none;
+	transition: 0.3s all;
+}
+
+.changeHeader {
+	background-color: #97c587;
+	box-shadow: 0 0 5px 0 rgba(150,150,150,0.5);
+}
+
+header nav a {
+	margin-right: 1rem;
+}
+
+header nav a:last-of-type {
+	margin-right: 0;
+}
+
+header div.logo {
+	text-align: center;
+}
+
+footer {
+	padding: 2rem 0 0 0;
+	background-color: #528540;
+	text-align: center;
+	box-shadow: 0 0 5px 0 rgba(150,150,150,0.5);
+}
+
+div#entrence .heading {
+	height: 100vh;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+div#articals {
+	padding: 2rem 0;
+	background-color: #FFF;
+}
+
+article {
+	position: relative;
+}
+
+article > div.anchor {
+	position: absolute;
+}
+
+div.card {
+	width: 100%;
+}
+
+div.card h3 {
+	text-align: center;
+}
+
+div.card div.card-content {
+	padding: 0 1rem 0.6rem 0.5rem;
+}
+
+div.card-image {
+  overflow: hidden;
+}
+
+div.card-image img {
+  max-width: 100%;
+  -moz-transition: all 5s;
+  -webkit-transition: all 5s;
+  transition: all 5s;
+}
+
+div.card-image:hover img {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+div.link-card {
+	padding: 1rem;
+	background-color: #CDDE47;
+}
+
+div.sub-video-title {
+	width: 100%;
+	text-align: center;
+}
+
+
+/*------ media property ---------------------------------*/
+
+@media only screen and (min-width: 769px) {
+	
+	body {
+		font-size: 1.2em;
+	}
+	
+	header {
+		text-align: right;
+	}
+	
+	footer {
+		padding: 1rem;
+	}
+}
+
+@media only screen and (min-width: 961px) {
+	
+	body {
+		font-size: 1.3em;
+		background-size: auto 100vh;
+	}
+	
+	article {
+		margin-bottom: 2rem;
+	}
+	
+	div.intro-img img {
+		margin-top: 1.1rem;
+	}
+}
